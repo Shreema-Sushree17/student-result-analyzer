@@ -22,14 +22,19 @@ function Result() {
     const e = Number(english);
     const s = Number(science);
     const ss = Number(socialstudies);
-    const g = Number(generalknowledge);
+    const gk = Number(generalknowledge);
 
     if ([m, e, s].some((x) => x < 0 || x > 100 || isNaN(x))) {
       setResult("Please enter valid marks (0-100) for all subjects");
       return;
     }
 
-    const total = m + e + s;
+    const total = 
+    Number(math) +
+    Number(english) +
+    Number(science) +
+    Number(socialstudies) +
+    Number(generalknowledge);
     const percent = (total / 500) * 100;
 
     let grade = "";
