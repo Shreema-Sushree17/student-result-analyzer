@@ -24,7 +24,7 @@ function Result() {
     const ss = Number(socialstudies);
     const gk = Number(generalknowledge);
 
-    if ([m, e, s].some((x) => x < 0 || x > 100 || isNaN(x))) {
+    if ([m, e, s, ss, gk].some((x) => x < 0 || x > 100 || isNaN(x))) {
       setResult("Please enter valid marks (0-100) for all subjects");
       return;
     }
