@@ -1,0 +1,162 @@
+/* Body background */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #f0f4f7, #e2ebf0);
+}
+
+/* Main container */
+.result-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: white;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.result-container h2 {
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* Header inputs */
+.header-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.header-inputs input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.header-inputs input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0,123,255,0.3);
+}
+
+/* Subject cards */
+.subjects {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.subject-card {
+  flex: 1;
+  min-width: 100px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.subject-card label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.subject-card input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.3s;
+}
+
+.subject-card input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0,123,255,0.3);
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  flex: 1;
+  min-width: 100px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Result card */
+.result-text {
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: left;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* Grade colors */
+.result-text.excellent { background-color: #d4edda; color: #155724; }
+.result-text.good { background-color: #cce5ff; color: #004085; }
+.result-text.pass { background-color: #fff3cd; color: #856404; }
+.result-text.fail { background-color: #f8d7da; color: #721c24; }
+
+/* Emoji */
+.emoji {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Progress bar */
+.progress-bar {
+  width: 100%;
+  height: 20px;
+  background: #eee;
+  border-radius: 10px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: #28a745;
+  border-radius: 10px;
+  transition: width 0.5s ease;
+}
+
+.progress:hover {
+  filter: brightness(1.2);
+}
+
+/* Error message */
+.error {
+  color: red;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .subjects {
+    flex-direction: column;
+  }
+  .buttons {
+    flex-direction: column;
+  }
+}
